@@ -16,6 +16,7 @@ public class ImageEditorFrame extends JFrame {
 		setSize(400, 300);
 		createMenuBar();
 		setVisible(true);
+		setTitle("Tims und Suses Projekt");
 	}
 	
 	private void createMenuBar() {
