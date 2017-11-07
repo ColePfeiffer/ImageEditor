@@ -7,7 +7,10 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 
+
 public class ImageEditorFrame extends JFrame {
+
+ImageEditorPanel panel;
 
 	ImageEditorPanel panel;
 
@@ -17,5 +20,15 @@ public class ImageEditorFrame extends JFrame {
 		createMenuBar();
 		setVisible(true);
 		setTitle("Tims und Suses Projekt");
+		panel = new ImageEditorPanel();
+		add(panel);
+		private void setDummyImage();
+	}
+	private void setDummyImage() {
+		BufferedImage bufferedImage = new BufferedImage(400, 300, BufferedImage.TYPE_INT_RGB);
+		Graphics g = bufferedImage.getGraphics();
+		g.setColor(Color.YELLOW);
+		g.fillOval(10, 10, 380, 280);
+		panel.setImage(bufferedImage);
 	}
 }
