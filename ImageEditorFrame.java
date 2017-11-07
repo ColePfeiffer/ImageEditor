@@ -1,5 +1,3 @@
-package base;
-
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
@@ -9,8 +7,6 @@ import javax.imageio.*;
 
 
 public class ImageEditorFrame extends JFrame {
-
-ImageEditorPanel panel;
 
 	ImageEditorPanel panel;
 
@@ -22,7 +18,7 @@ ImageEditorPanel panel;
 		setTitle("Tims und Suses Projekt");
 		panel = new ImageEditorPanel();
 		add(panel);
-		private void setDummyImage();
+		setDummyImage();
 	}
 	private void setDummyImage() {
 		BufferedImage bufferedImage = new BufferedImage(400, 300, BufferedImage.TYPE_INT_RGB);
